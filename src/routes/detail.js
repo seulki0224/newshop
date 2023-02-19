@@ -12,6 +12,7 @@ function DetailTab(props) {
   let [탭, 탭변경] = useState(0);
   let [num, setNum] = useState('');
 
+  //Popup칭
   useEffect(()=>{
     //2. 실행
     let timeCnt = setInterval(()=> { setCount(--cntNum) }, 1000);
@@ -23,6 +24,7 @@ function DetailTab(props) {
     }
   },[])
 
+  //입력창
   useEffect(()=>{
     if (isNaN(num) == true) {
       console.log('숫자만 입력 가능합니다.');
