@@ -1,14 +1,27 @@
 .main-bg {
   height: 300px;
-  background-image: url('./img/bg.png');
+  /* background-image: url('./img/bg.png'); */
   /* background-image : url('https://codingapple.com/wp-content/uploads/2022/04/bg.png'); */
+  background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1616,c_limit/79e8eb84-546e-4aec-83ad-f96c1e63f7a2/nike-just-do-it.jpg');
+  background-image: url('./img/bg.png');
+  background-size: cover;
+  background-position: top;
+}
+.logo {
+  width: 100px;
+  height: 50px;
+  background-image: url('./img/logo.png');
   background-size: cover;
   background-position: center;
 }
-.sub-bg {
-  width: 200px;
-  height: 100px;
-  /* background-image: url('https://codingapple.com/wp-content/uploads/2022/04/bg.png'); */
-  background-size: cover;
-  background-position: center;
+.app{
+  text-align: center;
+}
+button{
+  background: #adadad64;
+  border: none;
+  padding: 5px 10px;
+}
+button:hover{
+  background: #56565674;
 }
