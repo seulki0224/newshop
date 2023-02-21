@@ -25,3 +25,21 @@ button{
 button:hover{
   background: #56565674;
 }
+
+/* detail.js : src/component/detail.js*/
+.fadeStart{
+  opacity: 0;
+}
+.fadeEnd{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.fadeTabStart{
+  opacity: 0;
+}
+.fadeTabEnd{
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+

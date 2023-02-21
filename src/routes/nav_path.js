@@ -1,8 +1,8 @@
 /* eslint-disable */
 import styled from 'styled-components';
+import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import { useNavigate } from 'react-router-dom';
 
 let NavBtn = styled.button`
@@ -13,18 +13,18 @@ function Nav_Path() {
   let navigate = useNavigate();
   return (
     <div className="nav_path">
-      <Navbar bg='light' variant='light' >
+      <Navbar bg='light' variant='light'>
         <Container>
           {/* Logo */}
           {/* <Navbar.Brand href='/'>ShoeShop</Navbar.Brand> */}
           <Navbar.Brand href='/' className="logo"></Navbar.Brand>
 
-          {/*  */}
+          {/* Nav */}
           <Nav className='me-auto'>
             <NavBtn className='nav-link' onClick={()=>{ navigate('/'); }}>Home</NavBtn>
             <NavBtn className='nav-link' onClick={()=>{ navigate('/about') }}>About</NavBtn>
             {/* <NavBtn className='nav-link' onClick={()=>{ navigate('/Detail/1') }}>Detail</NavBtn> */}
-            <NavBtn className='nav-link' onClick={()=>{ navigate('/detailTab/2') }}>Detail</NavBtn>
+            <NavBtn className='nav-link' onClick={()=>{ navigate('/detail/2') }}>Detail</NavBtn>
             <NavBtn className='nav-link' onClick={()=>{ navigate('/장바구니') }}>장바구니</NavBtn>
           </Nav>
           {/* Event */}

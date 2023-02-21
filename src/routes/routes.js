@@ -2,18 +2,20 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { Routes, Route} from 'react-router-dom';
-import DetailTab from './detail';
 
 import data from '../data/data';
+
+import Detail from '../component/detail';
+
+import Spinner from '../component/spinner';
 import Card from '../component/card';
 import Event from '../component/event';
-import Spinner from '../component/spinner';
 
 function Routes_() {
   let [shoes, setShoes] = useState(data);
   let [btnCnt, setBtnCnt] = useState(1);
   let [spinner, setSpinner] = useState(false);
-  let [mainBG, setmainBG] = useState(true);
+  let [mainBG, setMainBG] = useState(true);
   return(
     <Routes>
 
@@ -27,7 +29,7 @@ function Routes_() {
               <div style={{position:"relative"}} className='main-bg'/>
             : null
           }
-          <button style={{position:"absolute",top:"80px", left:"10px"}} onClick={()=>{ setmainBG(!mainBG);}}>Img</button>
+          <button style={{position:"absolute",top:"80px", left:"10px"}} onClick={()=>{ setMainBG(!mainBG);}}>Img</button>
 
           {/* 로딩중 */}
           {spinner == true ? <Spinner/> : null}
@@ -83,7 +85,7 @@ function Routes_() {
       <Route path='/about' element={<>About</>}/>
 
       {/* <Route path="/Detail/:id" element={ <Detail shoes={shoes} /> }/> */}
-      <Route path="/detailTab/:id" element={ <DetailTab shoes={shoes}/> }/>
+      <Route path="/detail/:id" element={ <Detail shoes={shoes}/> }/>
 
       {/* <Route path="/detail4/:id/sas/aa" element={ <Detail4 shoes={shoes}/> }/> */}
 
