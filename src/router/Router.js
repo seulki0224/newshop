@@ -25,7 +25,7 @@ function NavPath(){
         <Container>
 
           <Nav className="logo">
-            <Navbar.Brand href='/Home' />
+            <Navbar.Brand href='/' />
           </Nav>
 
           <Nav className="me-auto navBtn">
@@ -53,12 +53,17 @@ function NavPath(){
   )
 }
 
-
 function Router() {
   let [shoes,   setShoes]   = useState(data);
   return(
     <Routes>
       {/* MainPage / .Main-bg, .Spinner, */}
+      <Route path='/' element={
+        <div className="MainPage">
+          <Home />
+        </div>
+      }/>
+
       <Route path='/Home' element={
         <div className="MainPage">
           <Home />
