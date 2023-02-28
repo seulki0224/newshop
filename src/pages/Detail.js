@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
-import dataShoesImg from '../data/dataShoesImg';
+import data_shoes_img from '../data/data_shoes_img';
 //useParams() + Find함수로 데이터 맵핑 + props 함수선언식
 
 function Detail(props) {
@@ -15,7 +15,7 @@ function Detail(props) {
   let [fadeTab, setFadeTab] = useState(' ');
 
   // let [num, setNum] = useState(''); //1.숫자만 입력
-  let shoesImg = dataShoesImg;
+  let shoesImg = data_shoes_img;
 
   //Popup창
   useEffect(()=>{

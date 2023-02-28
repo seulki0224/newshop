@@ -15,7 +15,7 @@ import shoes12 from '../images/shoes12.png';
 import shoes13 from '../images/shoes13.png';
 import shoes14 from '../images/shoes14.png';
 
-let dataShoesImg = [
+let data_shoes_img = [
   {id: 0, shoesImg: shoes0},
   {id: 1, shoesImg: shoes1},
   {id: 2, shoesImg: shoes2},
@@ -32,4 +32,4 @@ let dataShoesImg = [
   {id: 13, shoesImg: shoes13},
   {id: 14, shoesImg: shoes14}
 ]
-export default dataShoesImg;
+export default data_shoes_img;
