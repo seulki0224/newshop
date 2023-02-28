@@ -27,3 +27,4 @@ yarn-error.log*
 /src/backup/
 /src/unitConcept/
 /.vscode/
+/backup/

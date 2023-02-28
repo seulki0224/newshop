@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import styled from 'styled-components';
-import data from '../data/Data';
+import data from '../data/data';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Detail from '../pages/Detail';

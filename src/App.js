@@ -1,5 +1,4 @@
 /* eslint-disable */
-// import NavPath from './router/NavPath';
 import {NavPath, Router} from './router/Router';
 import './App.css';
 /**

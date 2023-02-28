@@ -1,7 +1,7 @@
 /* eslint-disable */
 import Spinner from '../components/Spinner';
 import { useState } from 'react';
-import data from '../data/Data';
+import data from '../data/data';
 import axios from 'axios';
 import Card from '../components/Card';
 

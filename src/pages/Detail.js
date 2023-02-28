@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import Nav from 'react-bootstrap/Nav';
-import DataShoesImg from '../data/DataShoesImg';
+import dataShoesImg from '../data/dataShoesImg';
 //useParams() + Find함수로 데이터 맵핑 + props 함수선언식
 
 function Detail(props) {
@@ -15,7 +15,7 @@ function Detail(props) {
   let [fadeTab, setFadeTab] = useState(' ');
 
   // let [num, setNum] = useState(''); //1.숫자만 입력
-  let shoesImg = DataShoesImg;
+  let shoesImg = dataShoesImg;
 
   //Popup창
   useEffect(()=>{
@@ -63,7 +63,7 @@ function Detail(props) {
         <div className="row">
           <div className="col-md-6">
             {/* <img src={'https://codingapple1.github.io/shop/shoes'+ [fineProduct.id+1] +'.jpg'} width='80%'/> */}
-            <img src={`${shoesImg[id].ShoesImg}`} width='80%'/>
+            <img src={`${shoesImg[id].shoesImg}`} width='80%'/>
           </div>
           <div className="col-md-6 mt-4">
             <h4 className="pt-5">{fineProduct.title}</h4>

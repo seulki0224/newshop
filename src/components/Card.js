@@ -1,14 +1,14 @@
 /* eslint-disable */
-import DataShoesImg from '../data/DataShoesImg';
+import dataShoesImg from '../data/dataShoesImg';
 
 //카드컴포넌트
 //key = idx
-let shoesImg = DataShoesImg;
+let shoesImg = dataShoesImg;
 
 function Card (props) {
   return (
     <div className='col-md-4'>
-      <img src={`${shoesImg[props.idx].ShoesImg}`} width='80%' />
+      <img src={`${shoesImg[props.idx].shoesImg}`} width='80%' />
       <h4>{props.shoes[props.idx].title}</h4>
       <p>{props.shoes[props.idx].content}</p>
       <p>{props.shoes[props.idx].price}</p>
