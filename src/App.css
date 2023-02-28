@@ -46,9 +46,6 @@ button.btn_Round {
 button.btn_Round:hover{
   background: #56565674;
 }
-.navBtn button{
-  /* min-width: 80px; */
-}
 /* Detail.js*/
 .fadeStart{
   opacity: 0;
