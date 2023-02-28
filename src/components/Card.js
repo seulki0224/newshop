@@ -1,9 +1,9 @@
 /* eslint-disable */
-import dataShoesImg from '../data/data_shoes_img';
+import DataShoesImg from '../data/DataShoesImg';
 
 //카드컴포넌트
 //key = idx
-let shoesImg = dataShoesImg
+let shoesImg = DataShoesImg;
 
 function Card (props) {
   return (

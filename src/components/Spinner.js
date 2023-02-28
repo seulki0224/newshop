@@ -1,6 +1,6 @@
 /* eslint-disable */
 import styled from 'styled-components'
-import spinner from '../img/spinner.gif';
+import spinner from '../images/spinner.gif';
 
 const SpinnerIMG = styled.img.attrs({
   src: `${spinner}`

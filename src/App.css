@@ -1,32 +1,55 @@
-.main-bg {
-  height: 300px;
-  /* background-image: url('./img/bg.png'); */
-  /* background-image : url('https://codingapple.com/wp-content/uploads/2022/04/bg.png'); */
-  background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1616,c_limit/79e8eb84-546e-4aec-83ad-f96c1e63f7a2/nike-just-do-it.jpg');
-  background-image: url('./img/bg.png');
-  background-size: cover;
-  background-position: top;
-}
-.logo {
-  width: 100px;
-  height: 50px;
-  background-image: url('./img/logo.png');
-  background-size: cover;
-  background-position: center;
-}
+/*App.js*/
 .app{
   text-align: center;
 }
-button{
-  background: #adadad64;
-  border: none;
-  padding: 5px 10px;
+.MainPage{
+  width: 100vw;
 }
-button:hover{
-  background: #56565674;
+/*Home.js*/
+.m20 {
+  margin: 20px 0;
+}
+.m50200 {
+  margin: 5px 0 30px 0;
 }
 
-/* detail.js : src/component/detail.js*/
+/*Nav*/
+.navBtn button{
+  min-width: 50px;
+}
+.bg-light {
+  --bs-bg-opacity: 0;
+  background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+.logo > .navbar-brand{
+  width: 100px;
+  height: 50px;
+  background-image: url('./images/logo.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+button.btn_Round {
+  padding: 6px 20px;
+  border-radius: 30px;
+  border: 1.5px solid transparent;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #111;
+  color: #fff;
+  font-weight: bold;
+}
+button.btn_Round:hover{
+  background: #56565674;
+}
+.navBtn button{
+  /* min-width: 80px; */
+}
+/* Detail.js*/
 .fadeStart{
   opacity: 0;
 }
@@ -34,7 +57,6 @@ button:hover{
   opacity: 1;
   transition: opacity 0.5s;
 }
-
 .fadeTabStart{
   opacity: 0;
 }
@@ -43,3 +65,64 @@ button:hover{
   transition: opacity 0.5s;
 }
 
+
+
+/* 화면 크기가 800px이상이면 */
+@media (min-width : 800px){
+  .main-bg {
+    min-height: 200px;
+    width: 100vw;
+    height: 300px;
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1616,c_limit/79e8eb84-546e-4aec-83ad-f96c1e63f7a2/nike-just-do-it.jpg');
+    background-image: url('./images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .mainText h3{
+    font-size: 48px;
+    font-weight:900;
+    font-family:FBHanGothicDB;
+  }
+  .mainText p{
+    font-size: 16px;
+    line-height: 24px;
+    font-family:FBHanGothicDB;
+  }
+}
+/* 화면 크기가 800px이하면 */
+@media (max-width : 800px){
+  .navPath{
+    /* border: 3px solid red; */
+    transform: scale(0.8);
+    margin-left: -50px;
+  }
+  .main-bg {
+    min-height: 150px;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_1616,c_limit/79e8eb84-546e-4aec-83ad-f96c1e63f7a2/nike-just-do-it.jpg');
+    background-image: url('./images/bg.png');
+    background-position: top 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .mainText{
+    margin: 0;
+  }
+  .mainText h3{
+    transform: scale(0.8);
+  }
+  .mainText p{
+    display: none;
+  }
+  .Btn_More_Shoes_Data{
+    transform: scale(0.65);
+    margin: -10px 0 -20px 0 !important;
+  }
+  .col-md-4{
+    /* border: 1px solid red; */
+    transform: scale(0.9);
+    margin: -5px 0;
+  }
+
+}
