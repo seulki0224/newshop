@@ -1,5 +1,5 @@
 /* eslint-disable */
-import {NavPath, Router} from './router/Router';
+import {NavPath, Router} from './Router';
 import './App.css';
 /**
  * Todo airbnb lint

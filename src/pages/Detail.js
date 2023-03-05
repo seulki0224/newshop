@@ -51,6 +51,7 @@ function Detail(props) {
       <input onChange={(e) => {setNum(e.target.value) }} />
       */}
 
+      {/* alert Popup */}
       {
         alert == true
         ? <div className="alert alert-warning">
@@ -85,12 +86,12 @@ function Detail(props) {
           <Nav.Link onClick={()=>{ setTab(2) }} eventKey="link2">Tab 2</Nav.Link>
         </Nav.Item>
       </Nav>
-
       <TabContent tab={tab} fadeTab={fadeTab} setFadeTab={setFadeTab} />
 
     </div>
   )
 }
+
 function TabContent({tab, fadeTab, setFadeTab}){
   // let [fade, setFade] = useState(' ');
 
